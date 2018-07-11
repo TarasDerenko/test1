@@ -44,7 +44,7 @@ $arr = array(
 while (true) {
 	echo "Enter age! :";
 	$input = trim(fgets(STDIN,1024));
-	
+
 	if(is_numeric($input)){
 		foreach ($arr as $i => $person) {
 			if( (date('Y') - date('Y',strtotime($person->BirthDay))) > $input )
@@ -55,3 +55,17 @@ while (true) {
 
 
 }
+?>
+<!--
+<script>
+   var i = 302;
+    var time = setInterval(function () {
+        window.open(
+            'http://localhost/test1.php?file=' + i,
+            '_blank' // <- This is what makes it open in a new window.
+        );
+        i++;
+        if(i > 380)
+            clearInterval(time);
+    },9000);
+</script>-->

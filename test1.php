@@ -1,4 +1,14 @@
 <?php
+
+/*if(isset($_GET['file'])){
+    $file = 'https://vs1.coursehunters.net/udemy-react16-maxim/lesson'.$_GET['file'].'.mp4';
+    header('Content-Description: File Transfer');
+    header('Content-Type: application/octet-stream');
+    header('Content-Disposition: attachment; filename="'.basename($file).'"');
+    readfile($file);
+    exit;
+}*/
+
 $number = rand(1,30);
 $count = 0;
 while (true) {
